@@ -32,45 +32,45 @@ $(document).ready(function () {
     });
 
 
-$('.bxslider').bxSlider();
+    $('.bxslider').bxSlider();
 
-    $( ".cost-range" ).slider({
-        range: "min",
-        value: 100,
-        min: 0,
-        max: 2400,
-        step: 100,
-
-        slide: function( event, ui ) {
-            $( "#maxRange" ).html(ui.value);
-            $('#costNumber').attr('value', ui.value);
-
-        },
-
-        change: function(event, ui) {
-            $('#costNumber').attr('value', ui.value);
-            $( "#maxRange" ).html(ui.value);
-        }
-
-    });
-
-        $('.minus').click(function () {
-            var $input = $(this).parent().find('input');
-            var count = parseInt($input.val()) - 100;
-            count = count < 100 ? 100 : count;
-            $input.val(count);
-            $input.change();
-            $('.cost-range').slider('value',$input.val());
-            $( "#maxRange" ).html($input.val());
-        });
-        $('.plus').click(function () {
-            var $input = $(this).parent().find('input');
-            $input.val(parseInt($input.val()) + 100);
-            $input.change();
-            $('.cost-range').slider('value',$input.val());
-            $( "#maxRange" ).html($input.val());
-
-        });
+    // $( ".cost-range" ).slider({
+    //     range: "min",
+    //     value: 100,
+    //     min: 0,
+    //     max: 2400,
+    //     step: 100,
+    //
+    //     slide: function( event, ui ) {
+    //         $( "#maxRange" ).html(ui.value);
+    //         $('#costNumber').attr('value', ui.value);
+    //
+    //     },
+    //
+    //     change: function(event, ui) {
+    //         $('#costNumber').attr('value', ui.value);
+    //         $( "#maxRange" ).html(ui.value);
+    //     }
+    //
+    // });
+    //
+    //     $('.minus').click(function () {
+    //         var $input = $(this).parent().find('input');
+    //         var count = parseInt($input.val()) - 100;
+    //         count = count < 100 ? 100 : count;
+    //         $input.val(count);
+    //         $input.change();
+    //         $('.cost-range').slider('value',$input.val());
+    //         $( "#maxRange" ).html($input.val());
+    //     });
+    //     $('.plus').click(function () {
+    //         var $input = $(this).parent().find('input');
+    //         $input.val(parseInt($input.val()) + 100);
+    //         $input.change();
+    //         $('.cost-range').slider('value',$input.val());
+    //         $( "#maxRange" ).html($input.val());
+    //
+    //     });
 
 
 
