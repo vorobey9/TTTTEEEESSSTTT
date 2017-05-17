@@ -1033,6 +1033,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="input-group">
                     <input type="name" name="name"
+                           id="consult-name"
                            placeholder="Денис Дмитриевич"
                            required>
                 </div>
@@ -1042,9 +1043,12 @@
                            placeholder="Номер вашего телефона"
                            required>
                 </div>
+                <div>
+                    <span class="answerSend"></span>
+                </div>
                 <div class="btn-container">
                     <button type="button" name="submit"
-                            class=" btn btn-large">Отправить
+                            class=" btn btn-large consult-send">Отправить
                     </button>
                 </div>
             </div>
@@ -1088,7 +1092,8 @@
 
                     <div class="number">
                         <span class="minus glyphicon glyphicon-minus"></span>
-                        <input type="text" disabled id="costNumber" value="100"/>
+                        <!--<input type="text" disabled id="costNumber" value="0"/>-->
+                        <input type="text" disabled id="costNumber" />
                         <span class="plus glyphicon glyphicon-plus"></span>
                     </div>
                 </div>
@@ -1114,19 +1119,25 @@
 
 
                 <div class="input-group">
-                    <input type="name" name="name"
+                    <input class="userName" type="name" name="name"
                            placeholder="Денис Дмитриевич"
                            required>
                 </div>
                 <div class="input-group">
-                    <input type="tel" name="tel"
+                    <input class="userPhone" type="tel" name="tel"
                            id="sell-phone"
                            placeholder="Номер вашего телефона"
                            required>
                 </div>
+
+                <div>
+                    <span class="answerStockForm"></span>
+                </div>
+                
                 <div class="btn-container">
-                    <button type="button"  name="submit"
-                            class=" btn btn-large">Купить акции
+                    <button type="button"  name="submit" onclick="A();"
+                            class=" btn btn-large stockButton">
+                        Купить акции
                     </button>
                 </div>
 
@@ -1157,6 +1168,8 @@
         src="libs/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
 
 <script type="text/javascript" src="js/StokeModel.js"></script>
+<script type="text/javascript" src="js/ModalForm.js"></script>
+<script type="text/javascript" src="js/myFuction.js"></script>
 
 <script type="text/javascript" src="js/script.js"></script>
 
