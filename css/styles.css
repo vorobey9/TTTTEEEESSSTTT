@@ -1870,7 +1870,7 @@ ul li {
     }
 
     .nav-toggle.close-nav{
-        left: 80%!important;
+        left: 80%;
     }
 
     .offer-wrapper .offer-btn-block .offer-info{
@@ -2043,10 +2043,28 @@ ul li {
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px) {
 
+    .offer-btn{
+        font-size: 14px;
+        padding: 12px 15px;
+    }
 
+    .stock-info-block .single-stock .top-title{
+        left: 10px;
+    }
 
+    .stock-info-block .single-stock .single-stock-block{
+        padding: 20px;
+    }
+
+    .consult-info-wrapper .consult-btn-area .divident-link{
+        width: 100%;
+        font-size: 14px;
+    }
 }
 
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 340px) {
+    .offer-btn{
+        font-size: 13px;
+        padding: 12px 15px;
+    }
 }

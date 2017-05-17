@@ -114,12 +114,14 @@ function clickModal(id) {
         step: tempStoke.getLot(),
 
         slide: function( event, ui ) {
-            $( "#maxRange" ).html(ui.value);
+        //    $( "#maxRange" ).html(ui.value);
+            $('#costNumber').val(ui.value);
+
         },
 
         change: function(event, ui) {
             $('#costNumber').val(ui.value);
-            $( "#maxRange" ).html(ui.value);
+           // $( "#maxRange" ).html(ui.value);
             recountModalSum();
         }
 
@@ -132,7 +134,7 @@ function clickModal(id) {
         $input.val(count);
         $input.change();
         $('.cost-range').slider('value',$input.val());
-        $( "#maxRange" ).html($input.val());
+      //  $( "#maxRange" ).html($input.val());
         recountModalSum();
     });
     $('.plus').click(function () {
@@ -145,7 +147,7 @@ function clickModal(id) {
 
         $('.cost-range').slider('value',$('#costNumber').val());
         // $( "#maxRange" ).html($input.val());
-        $( "#maxRange" ).html($('#costNumber').val());
+       // $( "#maxRange" ).html($('#costNumber').val());
         recountModalSum();
     });
 
